@@ -59,7 +59,7 @@ bottomDropdown.addEventListener('change', () => {
 
 catchphraseButton.addEventListener('click', () => {
     // get the value of the catchphrase input
-    console.log('Words');
+    
     // push the new catchphrase to the catchphrase array in state
     const newCatchphrase = catchphraseInput.value;
     // clear out the form input's value so it's empty to the user
@@ -83,7 +83,7 @@ function displayCatchphrases() {
         catchphrasesEl.append(latestPhrase);
        
         
-}
+    }
     // loop through each catchphrase in state
    
     // and for each catchphrase
