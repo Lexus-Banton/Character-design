@@ -71,15 +71,17 @@ catchphraseButton.addEventListener('click', () => {
 
 function displayStats() {
     // text content of the reportEl to tell the user how many times they've changed each piece of the state
-    return `You have changed the head ${headCount} times, the body ${middleCount} times, and the pants ${bottomCount} times. And your character's catchphrase is:`;
+    reportEl.textContent = `You have changed the head ${headCount} times, the body ${middleCount} times, and the pants ${bottomCount} times. And your character's catchphrase is:`;
 }
 
 function displayCatchphrases() {
     // clear out the DOM for the currently displayed catchphrases
+    catchphrasesEl.textContent = '';
     for (let phrase of catchphrases) {
         const latestPhrase = document.createElement('p');
+        latestPhrase.textContent = phrase;
         catchphrasesEl.append(latestPhrase);
-        console.log(phrase);
+       
         
 }
     // loop through each catchphrase in state
